@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Bienvenidos al sitio web del Instituto de Cultura de Samaniego - Nariño, en el encontraremos información relacionada conos eventos culturales de nuestro municipio">
+	<meta name="keywords" content="casa-de-cultura, sandoná, nariño, danza, fiestas, colombia, corregimientos">
+	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>	
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/social.css">
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script src="js/jquery.ui.datepicker-es.js"></script>
+	<script src="js/codigo.js"></script>
+
+	<title id="titulo"></title>
+	<link rel="shortcut icon" href="./images/img_escudo.png"/>
+	<a href="#" class="scrollup"><img src="images/icon_top.png" alt=""></a>
+
+</head>
+<body>
+
+	<!-- Barra Redes Sociales -->
+	<div class="social hidden-xs">
+		<ul>
+			<li id="facebook">
+				<a href="https://www.facebook.com/carnavaldenegrosyblancossandona/" target="_black" id="facebook" class="facebook">
+					<img src="images/facebook.png" alt="facebook" id="facebook">
+				</a>
+			</li>
+			<li id="twitter">
+				<a href="https://twitter.com/?lang=es" target="_black" id="twitter" class="twitter">
+					<img src="images/twitter.png" alt="twitter" id="twitter">
+				</a>
+			</li>
+			<li id="youtube">
+				<a href="https://www.youtube.com" target="_black" id="youtube" class="youtube">
+					<img src="images/youtube.png" alt="youtube" id="youtube">
+				</a>
+			</li>
+			<li id="googleplus">
+				<a href="https://plus.google.com/collections/featured" target="_black" id="googleplus" class="googleplus">
+					<img src="images/googleplus.png" alt="googleplus" id="googleplus">
+				</a>
+			</li>
+		</ul>	
+	</div>
+	<!-- Fin Barra Redes Sociales -->
+
+	<!-- Inicio Header -->
+	<header>	
+		<!-- Inicia Navbar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top navbar-cs myfont" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-cs">
+						<span class="sr-only">Desplegar/Ocultar menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.php" class="navbar-brand" id="titulo"><span class="glyphicon glyphicon-heart-empty"></span> Instituto de Cultura de Samaniego</a>
+				</div>
+				<!-- Inicia Menú-->
+					<div class="collapse navbar-collapse" id="navegacion-cs">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home" id="icono"></span> Inicio</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-user" id="icono"></span> Quiénes Somos <span class="caret"></span></a> 
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="info.php" id="btnMision">Información Institucional</a></li>
+									<li class="divider"></li>
+									<li><a href="personal.php" id="sub">Personal</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-book" id="icono"></span> Samaniego <span class="caret"></span></a> 
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="historia.php" id="btnHis">Reseña Histórica</a></li>
+									<li class="divider"></li>
+									<li><a href="simbolos.php" id="btnSim">Símbolos</a></li>
+									<li class="divider"></li>
+									<li><a href="geografia.php" id="btnGeo">Geografía</a></li>
+									<li class="divider"></li>
+									<li><a href="cultura.php" id="btnEco">Cultura</a></li>
+									<li class="divider"></li>
+									<li><a href="economia.php" id="btnEcon">Economía</a></li>
+									<li class="divider"></li>
+									<li>Fiestas</li>
+									<li><a href="semanaSanta.php" id="btn_fiestas"><span class="glyphicon glyphicon-triangle-right btn-xs"></span>Semana Santa</a></li>									
+									<li><a href="finAnio.php" id="btn_fiestas"><span class="glyphicon glyphicon-triangle-right btn-xs"></span>Fin de Año</a></li>
+									<li><a href="carnavales.php" id="btn_fiestas"><span class="glyphicon glyphicon-triangle-right btn-xs"></span>Carnavales</a></li>
+									<li class="divider"></li>																	
+								</ul>
+							</li>
+							
+							<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-duplicate" id="icono"></span> Proyectos <span class="caret"></span></a> 
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="eveninstitucionales.php" id="btnLet">Proyectos Institucionales</a></li>
+									
+								</ul>
+							</li>
+							
+							<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-duplicate" id="icono"></span> Turismo <span class="caret"></span></a> 
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="hoteles.php" id="btnLet">Hoteles</a></li>
+									<li class="divider"></li>
+									<li><a href="restaurantes.php" id="btnVia">Restaurantes</a></li>
+									<li class="divider"></li>
+									<li><a href="sitios.php" id="btnVia">Sitios para Visitar</a></li>
+									
+								</ul>
+							</li>
+							
+							
+							<li><a href="artesanos.php"><span class="glyphicon glyphicon-king" id="icono"></span>Gestor Cultural</a></li>
+							<li><a href="galeria.php"><span class="glyphicon glyphicon-picture" id="icono"></span> Galería</a></li>
+
+							<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-pencil" id="icono"></span> </span> Registro <span class="caret"></span></a> 
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="consultaartesano.php">Registrarse</a></li>
+									<li class="divider"></li>
+									<li><a href="consultains.php" id="btnLet">Imprimir Recibo</a></li>
+								</ul>
+							</li>
+						
+						<form action="https://www.google.com/search" method="GET" class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" id="buscar" placeholder="Buscar en Google">
+								<button type="button" class="btn btn-primary" id="btn_buscar" style="height: 35px">
+								<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</div>
+						</form>
+					</div>
+				<!-- Finaliza Menú-->
+			</div>			
+		</nav>
+		<!-- Finaliza Navbar-->
+		<hr class="salto-s visible-xs">
+		<!-- cabecera -->
+		<div class="img-responsive">
+			<img src="./images/bg_header.png" class="img-responsive hidden-xs" alt="cabecera" id="cabecera">
+		</div>
+		<!-- fin cabecera -->
+	</header>	
+	<!-- Inicio Header -->
